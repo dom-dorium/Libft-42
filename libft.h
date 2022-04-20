@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:17:48 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/20 11:26:35 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/20 14:28:09 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
+// Struct
+
+typedef struct		s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 // Partie 1 et 2
 int		ft_isalpha(int c);
@@ -53,5 +61,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	**ft_split(char const *s, char c);
 
 // Bonus
+
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
