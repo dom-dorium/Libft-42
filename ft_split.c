@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:42:01 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/18 15:46:00 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/20 11:09:45 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,5 +77,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (strings);
 }
-// libftTester Leaks a checker
-// enfin fini split 
