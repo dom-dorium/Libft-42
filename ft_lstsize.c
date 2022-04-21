@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:14:44 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/20 14:32:41 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/20 16:29:08 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,15 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	i;
+	int		i;
+	t_list	*ptr;
 
+	ptr = lst;
 	i = 0;
-	while (lst->next != NULL)
-
+	while (ptr != NULL)
+	{
+		i++;
+		ptr = ptr->next;
+	}
 	return (i);
 }

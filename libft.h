@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:17:48 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/20 14:28:09 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/21 14:05:20 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 // Struct
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -64,5 +64,6 @@ char	**ft_split(char const *s, char c);
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
-
+t_list	*ft_lstlast(t_list *lst);
+int		ft_lstsize(t_list *lst);
 #endif
