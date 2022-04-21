@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:42:01 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/20 11:09:45 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/21 14:20:31 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,6 @@ static char	*splitter(const char *s, char c, int *starter)
 		i++;
 		k++;
 	}
-	str = ft_calloc(i + 1, sizeof(char));
-	if (str == NULL)
-		return (NULL);
 	str = ft_substr(s, i - k, k);
 	*starter = i;
 	return (str);
