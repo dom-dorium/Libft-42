@@ -6,7 +6,7 @@
 #    By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/20 11:11:49 by djeannot          #+#    #+#              #
-#    Updated: 2022/04/21 18:21:25 by djeannot         ###   ########.fr        #
+#    Updated: 2022/04/22 17:07:58 by djeannot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,9 +26,9 @@ SRCS		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c 
 OBJS		= $(SRCS:.c=.o)
 
 
-BONUS		= ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c
+SRCS_BONUS	= ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c  ft_lstdelone.c ft_lstclear.c ft_lstiter.c
 
-BONUS_OBJS	= $(BONUS:.c=.o)
+OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
 
 all : $(NAME)
 
@@ -39,14 +39,14 @@ $(NAME):	$(OBJS)
 
 clean :
 
-			$(RM) $(OBJS) $(BONUS_OBJS)
+			$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean :	clean
 			$(RM) $(NAME)
 
 re :		fclean $(NAME)
 
-bonus :		$(OBJS) $(BONUS_OBJS)
-			$(LIB) $(NAME) $(OBJS) $(BONUS_OBJS)
+bonus :		$(OBJS) $(OBJS_BONUS)
+			$(LIB) $(NAME) $(OBJS) $(OBJS_BONUS)
 
 .PHONY:		all clean fclean re bonus
