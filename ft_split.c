@@ -6,12 +6,11 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:42:01 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/21 14:20:31 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/22 12:18:25 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	wordscount(const char *s, char c)
 {

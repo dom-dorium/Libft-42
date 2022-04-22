@@ -6,7 +6,7 @@
 #    By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/20 11:11:49 by djeannot          #+#    #+#              #
-#    Updated: 2022/04/21 13:00:33 by djeannot         ###   ########.fr        #
+#    Updated: 2022/04/21 18:21:25 by djeannot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c 
 OBJS		= $(SRCS:.c=.o)
 
 
-BONUS	= 	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstdelone.c ft_lstiter.c ft_lstmap.c
+BONUS		= ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c
 
 BONUS_OBJS	= $(BONUS:.c=.o)
 
