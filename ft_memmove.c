@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djeannot <djeannot@student.42quebec>       +#+  +:+       +#+        */
+/*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 14:35:17 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/05 13:47:51 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:48:28 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			dest[len] = source[len];
 	}
 	else
-	{	
+	{
 		while (i < len)
 		{
 			dest[i] = source[i];
@@ -38,7 +38,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dest);
 }
-
-// If the destination is longer than the source you must copy the source 
-// into the dst. before copying bytes to the -
-// lenght or it will do the same as memcpy.

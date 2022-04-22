@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djeannot <djeannot@student.42quebec>       +#+  +:+       +#+        */
+/*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 10:43:37 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/07 11:13:18 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:46:54 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (dstsize < dstl)
 		return (dstsize + srcl);
 	while (i < (dstsize - 1) && src[j])
-	{	
+	{
 		dst[i] = src[j];
 		i++;
 		j++;

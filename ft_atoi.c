@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: djeannot <djeannot@student.42quebec>       +#+  +:+       +#+        */
+/*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 16:06:36 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/20 17:43:45 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:44:04 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int	ft_atoi(const char *str)
 		nb *= 10;
 		nb += str[i] - '0';
 		i++;
-	}	
+	}
 	return (nb * neg);
 }
