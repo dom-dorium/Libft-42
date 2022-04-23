@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:42:01 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/22 17:45:35 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/23 16:57:15 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		j;
 	int		words;
-	int		*ptr;
 
 	if (s == NULL)
 		return (NULL);
@@ -67,8 +66,7 @@ char	**ft_split(char const *s, char c)
 	j = 0;
 	while (j < words)
 	{
-		ptr = &i;
-		strings[j] = splitter(s, c, ptr);
+		strings[j] = splitter(s, c, &i);
 		j++;
 	}
 	return (strings);
