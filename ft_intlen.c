@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 16:13:40 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/27 16:15:13 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/27 16:28:38 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,14 @@ int	ft_intlen(int n)
 {
 	int	i;
 
-	if (!n)
-		return (0);
-	i = 0;
-	if (n < 0)
-	{
-		i++;
-		n *= -1;
-	}
-	while (n > 9)
+	i = 1;
+	while (n >= 10 || n <= -10)
 	{
 		n /= 10;
 		i++;
 	}
-	i++;
+	if (n < 0)
+		i++;
 	return (i);
 }
+// return the lenght of an int (include the negative sign in the lenght)
