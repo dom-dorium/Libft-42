@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:42:01 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/23 16:57:15 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/27 16:10:54 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,24 +28,21 @@ static int	wordscount(const char *s, char c)
 	return (words);
 }
 
-static char	*splitter(const char *s, char c, int *starter)
+static char	*splitter(const char *s, char c, int *i)
 
 {
 	char	*str;
-	int		i;
 	int		k;
 
 	k = 0;
-	i = *starter;
-	while (s[i] == c)
-			i++;
-	while (s[i] != c && s[i])
+	while (s[*i] == c)
+			(*i)++;
+	while (s[*i] != c && s[*i])
 	{
-		i++;
+		(*i)++;
 		k++;
 	}
-	str = ft_substr(s, i - k, k);
-	*starter = i;
+	str = ft_substr(s, *i - k, k);
 	return (str);
 }
 

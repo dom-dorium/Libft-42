@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:17:48 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/22 17:47:34 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/27 16:16:29 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
+
+// Added function
+
+int		ft_intlen(int n);
 
 #endif
