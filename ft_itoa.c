@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:42:39 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/27 16:27:49 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/29 14:31:34 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_itoa(int n)
 	long int	nbr;
 
 	nbr = n;
-	size = ft_intlen(nbr);
+	size = ft_nblen(nbr);
 	nb = ft_calloc(size + 1, sizeof(char));
 	if (nb == NULL)
 		return (NULL);
