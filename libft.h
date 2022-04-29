@@ -6,7 +6,7 @@
 /*   By: djeannot <djeannot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:17:48 by djeannot          #+#    #+#             */
-/*   Updated: 2022/04/28 10:17:51 by djeannot         ###   ########.fr       */
+/*   Updated: 2022/04/29 12:13:04 by djeannot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 // Added function
 
-int		ft_intlen(long n);
+int		ft_nblen(long n);
+int		ft_isprime(int n);
 
 #endif
